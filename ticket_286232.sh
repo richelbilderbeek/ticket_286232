@@ -7,7 +7,7 @@
 # Fails: results in Python 3.6.6
 # module load bioinfo-tools python3/3.11.4 wrf-python/1.3.1 
 
-module load bioinfo-tools python3/3.11.4 Tk/8.6.11-GCCcore-11.2.0
+module load bioinfo-tools python3/3.11.4 wrf-python/1.3.1 Tk/8.6.11-GCCcore-11.2.0
 
 pip3 install boldigger_cline
 python3 --version
