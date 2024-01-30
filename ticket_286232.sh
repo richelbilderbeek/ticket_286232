@@ -11,6 +11,8 @@ module load bioinfo-tools python3/3.11.4 Tk/8.6.11-GCCcore-11.2.0
 
 pip3 install boldigger_cline
 python3 --version
+pip3 install --upgrade pip
+python3 --version
 ~/.local/bin/boldigger-cline --version
 
 # boldigger-cline --version
