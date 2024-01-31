@@ -14,8 +14,8 @@ module load bioinfo-tools python3/3.11.4 python_ML_packages/3.9.5-gpu Tkinter/3.
 
 pip3 install boldigger_cline
 python3 --version
-pip3 install --upgrade pip
-pip3 install packaging
+#pip3 install --upgrade pip
+#pip3 install packaging
 python3 --version
 ~/.local/bin/boldigger-cline --version
 
