@@ -4,6 +4,25 @@
 
 See [ticket_286232.sh](ticket_286232.sh) for the tested solution :-)
 
+However, this is not an optimal solution at all, as `tkinter` should be baked-in
+(as in, the entry point to `tkinter` should point to something in the
+`python` executable).
+
+With the application experts, we found out that `python` version `3.11.4`
+does not have `tkinter` built in. That Python version was rebuilt.
+Now all that is needed is to load a Python version and do a regular `pip install`.
+That is, this solution should work:
+
+```
+module load python/3.12.1
+pip3 install boldigger_cline
+# Or, if already installed:
+# pip3 install --force-reinstall boldigger_cline
+~/.local/bin/boldigger-cline --version
+```
+
+This solution has been tested by an Application Expert, but not by a user just yet.
+
 ## `boldigger-cline` executable
 
 ```bash title="~/.local/bin/boldigger-cline"
