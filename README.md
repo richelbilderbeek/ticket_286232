@@ -329,3 +329,65 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> tkinter.Tcl().eval('info patchlevel')
 '8.6.11'
 ```
+
+## Testing with Python modules have tkinter installed
+
+This is the output of the script [test_tkinter.sh](test_tkinter.sh):
+
+```
+[richel@rackham2 ticket_286232]$ ./test_tkinter.sh 
+
+The following have been reloaded with a version change:
+  1) python/3.6.0 => python/3.3
+
+
+The following have been reloaded with a version change:
+  1) python/3.3 => python/3.3.1
+
+
+The following have been reloaded with a version change:
+  1) python/3.3.1 => python/3.4.3
+
+
+The following have been reloaded with a version change:
+  1) python/3.4.3 => python/3.5.0
+
+
+The following have been reloaded with a version change:
+  1) python/3.5.0 => python/3.6.0
+
+
+The following have been reloaded with a version change:
+  1) python/3.6.0 => python/3.6.8
+
+
+The following have been reloaded with a version change:
+  1) python/3.6.8 => python/3.7.2
+
+
+The following have been reloaded with a version change:
+  1) python/3.7.2 => python/3.8.7
+
+
+The following have been reloaded with a version change:
+  1) python/3.8.7 => python/3.9.5
+
+
+The following have been reloaded with a version change:
+  1) python/3.9.5 => python/3.10.8
+
+
+The following have been reloaded with a version change:
+  1) python/3.10.8 => python/3.11.4
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/sw/comp/python/3.11.4/rackham/lib/python3.11/tkinter/__init__.py", line 38, in <module>
+    import _tkinter # If this fails your Python may not be configured for Tk
+    ^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named '_tkinter'
+
+The following have been reloaded with a version change:
+  1) python/3.11.4 => python/3.12.1
+```
+
