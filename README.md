@@ -14,8 +14,11 @@ if __name__ == '__main__':
     sys.exit(main())
 ```
 
-## `bioinfo-tools python3/3.6.8 wrf-python/1.3.1` fails
+## Approach 1: `bioinfo-tools python3/3.6.8 wrf-python/1.3.1` 
 
+This fails, as for the version of Python loaded by `wrf-python/1.3.1`
+(which is Python 3.6.6), there existed no version of `cssselect` yet (`1.1` is latest)
+that is required for `boldigger_cline` (which requires `1.2`).
 
 ### Attempt 1: basic setup
 
