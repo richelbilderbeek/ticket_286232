@@ -1,6 +1,10 @@
 # ticket_286232
 
-Ticket 286232
+## Solution
+
+See [ticket_286232.sh](ticket_286232.sh) for the tested solution :-)
+
+## `boldigger-cline` executable
 
 ```bash title="~/.local/bin/boldigger-cline"
 [richel@rackham2 ticket_286232]$ cat ~/.local/bin/boldigger-cline
@@ -145,12 +149,7 @@ I feel this approach is a dead end in dependency hell.
 
 ## Approach 2: `Tkinter/3.9.6-GCCcore-11.2.0`
 
-```
-#!/bin/bash
-module load Tkinter/3.9.6-GCCcore-11.2.0
-pip3 install --user --force-reinstall boldigger_cline
-~/.local/bin/boldigger-cline --version
-```
+This worked! See [ticket_286232.sh](ticket_286232.sh) for the tested solution :-)
 
 ### Setup
 
@@ -317,4 +316,16 @@ Test to work:
 ```
 [richel@rackham3 ticket_286232]$ ~/.local/bin/boldigger-cline --version
 2.2.1
+```
+
+
+## Other notes
+
+```
+rackham5: /sw/comp/python/3.12.1/src/Python-3.12.1 $ python3
+Python 3.12.1 (main, Feb  1 2024, 15:26:06) [GCC 12.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tkinter
+>>> tkinter.Tcl().eval('info patchlevel')
+'8.6.11'
 ```
